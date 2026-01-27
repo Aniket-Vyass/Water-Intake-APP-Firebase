@@ -8,7 +8,7 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
-  final amountController = TextEditingController(text: "hello");
+  final amountController = TextEditingController();
   void addWater() {
     showDialog(
       context: context,
@@ -30,6 +30,21 @@ class _HomePageState extends State<HomePage> {
             ),
           ],
         ),
+        //Buttons for the AlertDialog
+        actions: [
+          TextButton(
+            onPressed: () {
+              Navigator.pop(context);
+            },
+            child: Text("Cancel"),
+          ),
+          TextButton(
+            onPressed: () {
+              //save data to database
+            },
+            child: Text("Save"),
+          ),
+        ],
       ),
     );
   }
