@@ -1,4 +1,7 @@
+import 'dart:convert';
+
 import 'package:flutter/material.dart';
+import 'package:http/http.dart' as http;
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -9,6 +12,22 @@ class HomePage extends StatefulWidget {
 
 class _HomePageState extends State<HomePage> {
   final amountController = TextEditingController();
+
+  void saveWater(String amount) async {
+    final url = Uri.https(
+      'https://water-intake-app-e76bf-default-rtdb.asia-southeast1.firebasedatabase.app',
+      'water.json',
+    );
+    //now that we have the URL we would like to post something to our database
+    // to post the data the post() fuc needs a url that is URI type and a body which is the data we want to post
+    // that's why we converted the normal http final url to Uri.https()
+    var response = await http.post(
+      url,
+      headers: {'Content-Type': 'application/json'},
+      body: json.encode({'amount': double.parse(amount)}),
+    );
+  }
+
   void addWater() {
     showDialog(
       context: context,
@@ -35,6 +54,7 @@ class _HomePageState extends State<HomePage> {
           TextButton(
             onPressed: () {
               Navigator.pop(context);
+              amountController.clear();
             },
             child: Text("Cancel"),
           ),
