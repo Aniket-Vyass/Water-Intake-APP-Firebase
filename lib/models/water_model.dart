@@ -1,4 +1,3 @@
-// ignore_for_file: public_member_api_docs, sort_constructors_first
 class WaterModel {
   final String? id;
   final double amount;
@@ -20,9 +19,9 @@ class WaterModel {
       unit: json['unit'],
     );
   }
-}
 
-//convert watermodel to json for sending data to firebase
-Map<String, dynamic> toMap() {
-  return {'id': id, 'amount': amount, 'dateTime': DateTime.now(), 'unit': unit};
+  //convert watermodel to json for sending data to firebase
+  Map<String, dynamic> toJson() {
+    return {'amount': amount, 'dateTime': DateTime.now()};
+  }
 }
