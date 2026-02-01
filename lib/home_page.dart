@@ -1,8 +1,7 @@
-import 'dart:convert';
 import 'package:flutter/material.dart';
-import 'package:http/http.dart' as http;
 import 'package:provider/provider.dart';
 import 'package:water_intake_tracking_app_firebase/data/water_data.dart';
+import 'package:water_intake_tracking_app_firebase/models/water_model.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -13,6 +12,15 @@ class HomePage extends StatefulWidget {
 
 class _HomePageState extends State<HomePage> {
   final amountController = TextEditingController();
+  void saveWater() async {
+    Provider.of<WaterData>(context, listen: false).addWater(
+      WaterModel(
+        amount: double.parse(amountController.text.toString()),
+        dateTime: DateTime.now(),
+        unit: 'ml',
+      ),
+    );
+  }
 
   void addWater() {
     showDialog(
