@@ -6,12 +6,13 @@ const About = () => {
       <div className="about-me">
         <h3 className="title">About Me</h3>
         <p className="para">
-          Hi, I'm Aniket Vyas — a video editor with 2 years of experience
-          bringing stories to life through the lens of creativity. From
-          high-energy YouTube content and scroll-stopping Reels to cinematic
-          short films, I craft visuals that don't just look good — they feel
-          right. I believe every frame has a purpose, and I work until each one
-          earns its place on the timeline.
+          Hi, I'm Aniket Vyas — a Flutter app developer with 1.5 years of experience
+          developing apps and games with Flame and Dart. From
+          - high-energy Fast Games with Flame & tile.io,
+          - fast & efficiently smooth apps with Flutter & Bloc
+          I craft apps that don't just look good — they feel
+          right for the user experience. I believe every App has a purpose,
+          and I work until each one earns its place on the timeline.
         </p>
       </div>
     </div>

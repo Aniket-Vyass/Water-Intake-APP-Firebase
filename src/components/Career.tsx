@@ -15,42 +15,48 @@ const Career = () => {
           <div className="career-info-box">
             <div className="career-info-in">
               <div className="career-role">
-                <h4>Video Editor & Motion Graphics</h4>
-                <h5>Game Greed</h5>
+                <h4>Business owner</h4>
+                <h5>at Muskan Motors</h5>
               </div>
-              <h3>2024</h3>
+              <h3>2018 - present</h3>
             </div>
             <p>
-              Worked for Game Greed, as a freelancing WFH Video Editor, Edited 3D looking videos,
-              worked mostly on Brand Intro videos and reels.
+              Owner of a successfull profitable firm Muskan Motors!
             </p>
           </div>
           <div className="career-info-box">
             <div className="career-info-in">
               <div className="career-role">
-                <h4>Worked as a Freelancer</h4>
-                <h5>For Multiple Brands</h5>
+                <h4>Started Building Apps</h4>
+                <h5>Using Flutter and Bloc </h5>
               </div>
               <h3>2025</h3>
             </div>
             <p>
-              Worked as a freelancing video editor at vaarious companies,
-              Edited videos and Motion Optimization for various Brands
-              Freelanced for AG Khan Cricket Academy & Chai Leela!
+              Started building business logic apps:
+              Blinkit Ui clones and fully functional Catalog Apps
+              fir better understanding of business logic, REST API,
+              Backend as Firebase, and Bloc as State Management, learning
+              clean business architecture and underlying processes.
             </p>
           </div>
           <div className="career-info-box">
             <div className="career-info-in">
               <div className="career-role">
-                <h4>Video Editor</h4>
-                <h5>Sony Cycle Sports</h5>
+                <h4>Production ready Apps & Games</h4>
+                <h5>Using Flutter, Bloc & Flame engine</h5>
               </div>
               <h3>NOW</h3>
             </div>
             <p>
-              Worked at Sony Cycle Sports company at bikaner,
-              Made Social Media Content for Brand Promotion on Instagram!
-              Worked mostly on high quality edits for youtube videos and reels.
+              Built a Production ready Social app called Wove,
+              with all the feature including : posting pictures/videos,
+              like, comment, real time notifications.
+              Built a Face changing Mario app in which a user can replace
+              Mario's head with their image with the help of Flame Engine
+              for collision detections and physics. Used Tile.io for the Maps
+              got copyrigh erorr and had to remove the game!
+              Do checkout the game on my github!
             </p>
           </div>
         </div>

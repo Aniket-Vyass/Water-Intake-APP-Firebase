@@ -87,22 +87,20 @@ const WhatIDo = () => {
             <div className="what-corner"></div>
 
             <div className="what-content-in">
-              <h3>EDITING</h3>
-              <h4>Specialization</h4>
+              <h3>Building Apps</h3>
+              <h4>Production ready Apps with Flutter and Dart</h4>
               <p>
-                Crafting compelling narratives through professional cutting,
-                color grading, and sound design. Focused on keeping viewers
+                Building Fast & efficient Apps using Flutter & Dart,
+                managing app state using Bloc(cubits), building clean
+                aesthetic and cleanest UI, Focused on keeping users
                 engaged from the first second to the last.
               </p>
               <h5>Skillset & tools</h5>
               <div className="what-content-flex">
-                <div className="what-tags">Premiere Pro</div>
-                <div className="what-tags">DaVinci Resolve</div>
-                <div className="what-tags">Final Cut Pro</div>
-                <div className="what-tags">CapCut</div>
-                <div className="what-tags">Color Grading</div>
-                <div className="what-tags">Sound Design</div>
-                <div className="what-tags">Narrative Flow</div>
+                <div className="what-tags">Flutter</div>
+                <div className="what-tags">Dart </div>
+                <div className="what-tags">Flame</div>
+                <div className="what-tags">Tile</div>
               </div>
               <div className="what-arrow"></div>
             </div>
@@ -126,22 +124,20 @@ const WhatIDo = () => {
             </div>
             <div className="what-corner"></div>
             <div className="what-content-in">
-              <h3>MOTION</h3>
+              <h3>Flame game</h3>
               <h4>Enhancements</h4>
               <p>
-                Adding that extra layer of polish with dynamic motion graphics,
-                VFX, and smooth transitions that elevate the production value
-                of every project.
+                Adding that extra layer of polish with dynamic motion,
+                and smooth transitions that elevate the production value
+                of every game using Flame for collision handling and
+                Tiled for designign Maps and object layers.
               </p>
               <h5>Skillset & tools</h5>
               <div className="what-content-flex">
-                <div className="what-tags">After Effects</div>
-                <div className="what-tags">Blender</div>
-                <div className="what-tags">Photoshop</div>
-                <div className="what-tags">Illustrator</div>
-                <div className="what-tags">Motion Graphics</div>
+                <div className="what-tags">Objectlayering</div>
+                <div className="what-tags">Flame Engine</div>
+                <div className="what-tags">2D games</div>
                 <div className="what-tags">Visual Effects</div>
-                <div className="what-tags">3D Elements</div>
               </div>
               <div className="what-arrow"></div>
             </div>
