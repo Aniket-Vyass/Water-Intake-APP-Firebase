@@ -35,7 +35,7 @@ const Career = () => {
             <p>
               Started building business logic apps:
               Blinkit Ui clones and fully functional Catalog Apps
-              fir better understanding of business logic, REST API,
+              for better understanding of business logic, REST API,
               Backend as Firebase, and Bloc as State Management, learning
               clean business architecture and underlying processes.
             </p>
