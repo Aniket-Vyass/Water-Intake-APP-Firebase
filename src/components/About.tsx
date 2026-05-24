@@ -6,7 +6,7 @@ const About = () => {
       <div className="about-me">
         <h3 className="title">About Me</h3>
         <p className="para">
-          Hi, I'm Aditya Harsh — a video editor with 2 years of experience
+          Hi, I'm Aniket Vyas — a video editor with 2 years of experience
           bringing stories to life through the lens of creativity. From
           high-energy YouTube content and scroll-stopping Reels to cinematic
           short films, I craft visuals that don't just look good — they feel
