@@ -3,6 +3,10 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
 
+import woveImg from "../assets/Wove.png";
+import blinkitImg from "../assets/Blinkit Clone Portfolio Showcase.png";
+import marioImg from "../assets/mario.png";
+
 gsap.registerPlugin(useGSAP);
 
 type WorkItem = {
@@ -19,21 +23,21 @@ const workItems: WorkItem[] = [
     name: "Wove App",
     category: "My own Production Ready App",
     tools: "Flutter, Bloc for StateManagement, Firebase for Backend, Figma",
-    src: "src/assets/Wove.png",
+    src: woveImg,
   },
   {
     id: 2,
     name: "Blinkit Clone App",
     category: "Firebase for Backend",
     tools: "Flutter, Custom Helper widgets, Dart, Picsart, Figma",
-    src: "src/assets/Blinkit Clone Portfolio Showcase.png",
+    src: blinkitImg,
   },
   {
     id: 3,
     name: "Me as Mario Game",
     category: "Upload your image and play as Mario",
     tools: "Flame, Tiled, Flutter, Dart",
-    src: "src/assets/mario.png",
+    src: marioImg,
   },
   {
     id: 4,
@@ -48,7 +52,6 @@ const workItems: WorkItem[] = [
     category: "Video Editing",
     tools: "Premiere Pro, DaVinci Resolve, Final Cut Pro, Picsart",
     src: "",
-
   },
 ];
 
@@ -116,23 +119,14 @@ const Work = () => {
               </div>
               <div className="work-image">
                 <div className="work-image-in">
-                  <video
-                    src={item.src}
-                    muted
-                    loop
-                    playsInline
-                    onMouseEnter={(e) => {
-                      const v = e.currentTarget;
-                      v.muted = false;
-                      v.play();
-                    }}
-                    onMouseLeave={(e) => {
-                      const v = e.currentTarget;
-                      v.muted = true;
-                      v.pause();
-                      v.currentTime = 0;
-                    }}
-                  />
+                  {item.src ? (
+                    <img
+                      src={item.src}
+                      alt={item.name}
+                    />
+                  ) : (
+                    <div className="work-placeholder">Coming Soon</div>
+                  )}
                 </div>
               </div>
             </div>
