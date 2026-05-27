@@ -48,7 +48,7 @@ const Contact = () => {
               Twitter <MdArrowOutward />
             </a>
             <a
-              href="https://www.instagram.com/aditya_31_24?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+              href="https://www.instagram.com/aniketvyas_?igsh=MWxjbzVoZmliOGc4aw=="
               target="_blank"
               data-cursor="disable"
               className="contact-social"

@@ -21,7 +21,7 @@ const workItems: WorkItem[] = [
   {
     id: 1,
     name: "Wove App",
-    category: "My own Production Ready App",
+    category: "My own Production Ready App\nAvailabe live on Google Play Store",
     tools: "Flutter, Bloc for StateManagement, Firebase for Backend, Figma",
     src: woveImg,
   },
